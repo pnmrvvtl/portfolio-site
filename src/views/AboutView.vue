@@ -1,6 +1,6 @@
 <template>
-    <h1>About</h1>
+  <h1>Sorry, this page is under construction...</h1>
 </template>
 
-<style>
-</style>
+<style></style>
+<script setup lang="ts"></script>

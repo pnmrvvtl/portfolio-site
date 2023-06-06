@@ -1,29 +1,28 @@
 <script lang="ts">
-import AppThemeIcon from "@/components/AppThemeIcon.vue";
-import {useThemeStore} from "@/stores/theme";
-
+import AppThemeIcon from '@/components/AppThemeIcon.vue'
+import { useThemeStore } from '@/stores/theme'
 export default {
   name: 'AppHeader',
-  components: {AppThemeIcon},
+  components: { AppThemeIcon },
   computed: {
     isDark() {
-      return useThemeStore().isDarkTheme;
-    },
-  },
+      return useThemeStore().isDarkTheme
+    }
+  }
 }
 </script>
 
 <template>
-  <header :class="{dark: isDark}">
+  <header :class="{ dark: isDark }">
     <nav>
       <RouterLink to="/" exact-active-class="active">
-        <img alt="site logo" src="../assets/logo.png" width="100">
+        <img alt="site logo" src="@/assets/logo.png" width="100" />
       </RouterLink>
       <RouterLink to="/" exact-active-class="active">Home</RouterLink>
       <RouterLink to="/about" exact-active-class="active">About</RouterLink>
       <RouterLink to="/contact" exact-active-class="active">Contact</RouterLink>
     </nav>
-    <app-theme-icon/>
+    <app-theme-icon />
   </header>
 </template>
 
@@ -73,11 +72,9 @@ header {
       text-decoration: underline;
     }
   }
-
 }
 
 nav {
   display: flex;
 }
-
 </style>

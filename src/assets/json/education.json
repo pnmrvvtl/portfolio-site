@@ -1,0 +1,45 @@
+[
+  {
+    "schoolName": "National Aerospace University «Kharkiv Aviation Institute»",
+    "specialtyName": "honors master's degree in the field of study «Information Technologies of Design», qualification «Computer System Analyst»",
+    "dateOfStart": "SEPTEMBER 2010",
+    "dateOfFinish": "FEBRUARY 2016",
+    "classes": ["OOP in C++", "Algorithms", "Data Structures", "Discrete Mathematics", "Computer Design with CAD/CAM/CAE systems"],
+    "document": "",
+    "graduationProject": {
+      "title": "Research and development of a simulation model of an unmanned aircraft flight on a given route, taking into account the relief",
+      "description": "",
+      "link": "",
+      "usedStack": ["C++","Qt Framework"]
+    }
+  },
+  {
+    "schoolName": "The Rolling Scopes School",
+    "specialtyName": "course «JavaScript/Front-end Developer»",
+    "dateOfStart": "SEPTEMBER 2022",
+    "dateOfFinish": "MARCH 2023",
+    "classes": ["", ""],
+    "document": "https://app.rs.school/certificate/2rk8bppe",
+    "graduationProject": {
+      "title": "Course project RS-Healthy App",
+      "link": "https://github.com/pnmrvvtl/rs-clone",
+      "description": "project working with Fitness API and Spoonacular API (meals), Google Maps API. After user input some values about himself our app can propose personal data for this user about health and propose meal plan for user and closest sport areas.",
+      "usedStack": ["Typescript", "React", "React-router", "React-google-maps", "Firebase", "Axios", "Material-UI", "Webpack", "Sass", "Chart.js"]
+    }
+  },
+  {
+    "schoolName": "The Rolling Scopes School",
+    "specialtyName": "course «React Developer»",
+    "dateOfStart": "MARCH 2023",
+    "dateOfFinish": "JUNE 2023",
+    "classes": ["", ""],
+    "document": "https://app.rs.school/certificate/2rk8bppe",
+    "graduationProject": {
+      "title": "Browser of GraphQL queries, clone of GraphiQL",
+      "link": "https://github.com/pnmrvvtl/graphiql-app",
+      "description": "an interactive in-browser GraphQL IDE",
+      "usedStack": ["Typescript", "React", "Next", "Tailwind", "Firebase", "Radix-ui", "Codemirror",
+        "Redux Toolkit", "RTK Query", "i18next"]
+    }
+  }
+]
