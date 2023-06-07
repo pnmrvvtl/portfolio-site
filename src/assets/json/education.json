@@ -2,8 +2,8 @@
   {
     "schoolName": "National Aerospace University «Kharkiv Aviation Institute»",
     "specialtyName": "honors master's degree in the field of study «Information Technologies of Design», qualification «Computer System Analyst»",
-    "dateOfStart": "SEPTEMBER 2010",
-    "dateOfFinish": "FEBRUARY 2016",
+    "startDate": "SEPTEMBER 2010",
+    "finishDate": "FEBRUARY 2016",
     "classes": ["OOP in C++", "Algorithms", "Data Structures", "Discrete Mathematics", "Computer Design with CAD/CAM/CAE systems"],
     "document": "",
     "graduationProject": {
@@ -16,9 +16,9 @@
   {
     "schoolName": "The Rolling Scopes School",
     "specialtyName": "course «JavaScript/Front-end Developer»",
-    "dateOfStart": "SEPTEMBER 2022",
-    "dateOfFinish": "MARCH 2023",
-    "classes": ["", ""],
+    "startDate": "SEPTEMBER 2022",
+    "finishDate": "MARCH 2023",
+    "classes": [],
     "document": "https://app.rs.school/certificate/2rk8bppe",
     "graduationProject": {
       "title": "Course project RS-Healthy App",
@@ -30,10 +30,10 @@
   {
     "schoolName": "The Rolling Scopes School",
     "specialtyName": "course «React Developer»",
-    "dateOfStart": "MARCH 2023",
-    "dateOfFinish": "JUNE 2023",
-    "classes": ["", ""],
-    "document": "https://app.rs.school/certificate/2rk8bppe",
+    "startDate": "MARCH 2023",
+    "finishDate": "JUNE 2023",
+    "classes": [],
+    "document": "https://app.rs.school/certificate/sh7x3hcp",
     "graduationProject": {
       "title": "Browser of GraphQL queries, clone of GraphiQL",
       "link": "https://github.com/pnmrvvtl/graphiql-app",

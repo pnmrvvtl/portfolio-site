@@ -2,10 +2,14 @@
 import { useThemeStore } from '@/stores/theme'
 import { computed } from 'vue'
 import introduction from '@/assets/json/introduction.json'
-import education from '@/assets/json/education.json'
-import experience from '@/assets/json/experience.json'
+import educationJson from '@/assets/json/education.json'
+import experienceJson from '@/assets/json/experience.json'
+import type EducationItem from '@/types/educationItem'
+import type ExperienceItem from '@/types/experienceItem'
 
 const isDark = computed(() => useThemeStore().isDarkTheme)
+const educationData = (educationJson as EducationItem[]).reverse()
+const experienceData = experienceJson as ExperienceItem[]
 </script>
 
 <template>
@@ -42,11 +46,55 @@ const isDark = computed(() => useThemeStore().isDarkTheme)
         </div>
       </div>
     </section>
-    <section>
-      <h2>Education</h2>
+    <h2>Education</h2>
+    <section class="education">
+      <div class="education__progress"></div>
+      <div class="education__data">
+        <div
+          class="education__element"
+          v-for="education in educationData"
+          :key="education.specialtyName"
+        >
+          <div class="education__marker"></div>
+          <h2>{{ education.schoolName }}</h2>
+          <p>{{ education.specialtyName }}</p>
+          <p>{{ education.startDate }} - {{ education.finishDate }}</p>
+          <ul>
+            <li v-for="className in education.classes" :key="className">{{ className }}</li>
+          </ul>
+          <div v-if="education.document">
+            <a :href="education.document" target="_blank">View Document</a>
+          </div>
+          <div>
+            <h3>{{ education.graduationProject.title }}</h3>
+            <p>{{ education.graduationProject.description }}</p>
+            <a :href="education.graduationProject.link" target="_blank">View Project</a>
+            <ul>
+              <li v-for="stackItem in education.graduationProject.usedStack" :key="stackItem">
+                {{ stackItem }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Working experience</h2>
+    <h2>Working experience</h2>
+    <section class="experience">
+      <div class="experience__progress"></div>
+      <div class="experience__data">
+        <div
+          class="education__element"
+          v-for="experience in experienceData.reverse()"
+          :key="experience.title"
+        >
+          <div class="education__marker"></div>
+          <h2>{{ experience.title }}</h2>
+          <p>{{ experience.description }}</p>
+          <p>{{ experience.position }}</p>
+          <p>{{ experience.location }}</p>
+          <p>{{ experience.startDate }} - {{ experience.finishDate }}</p>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -96,8 +144,8 @@ main {
     }
 
     &__credentials {
-      min-width: 280px;
-      max-width: calc(100% - 380px);
+      min-width: 300px;
+      max-width: calc(100% - 400px);
       color: $DARK_FONT_COLOR;
 
       h2 {
@@ -135,6 +183,51 @@ main {
             text-decoration: underline;
             color: $DARK_BG_COLOR;
           }
+        }
+      }
+    }
+  }
+
+  .education,
+  .experience {
+    display: flex;
+
+    &__progress {
+      margin: 0 10px;
+      width: 5px;
+      background: linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%);
+    }
+
+    &__data {
+      padding: 20px;
+      .education__element {
+        position: relative;
+        ul {
+          padding: 0;
+          display: flex;
+          list-style: none;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+
+          li {
+            margin: 5px;
+            background-color: $DARK_BG_COLOR;
+            color: $LIGHT_FONT_COLOR;
+            padding: 10px;
+            border-radius: 15px;
+          }
+        }
+
+        .education__marker {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-color: $DARK_BG_COLOR;
+          border-radius: 50%;
+          left: -41px;
+          top: 0.5rem;
+          z-index: 0;
         }
       }
     }

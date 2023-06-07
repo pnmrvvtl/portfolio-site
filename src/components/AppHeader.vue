@@ -16,7 +16,7 @@ export default {
   <header :class="{ dark: isDark }">
     <nav>
       <RouterLink to="/" exact-active-class="active">
-        <img alt="site logo" src="@/assets/logo.png" width="100" />
+        <img alt="site logo" src="@/assets/logo.png" width="80" />
       </RouterLink>
       <RouterLink to="/" exact-active-class="active">Home</RouterLink>
       <RouterLink to="/about" exact-active-class="active">About</RouterLink>
@@ -30,14 +30,15 @@ export default {
 @import '@/assets/_colors';
 
 header {
+  z-index: 1;
   position: sticky;
   padding: 0 50px;
   box-sizing: border-box;
   top: 0;
   left: 0;
   background-color: $LIGHT_BG_COLOR;
-  height: 100px;
   border-bottom: 3px solid darken($LIGHT_BG_COLOR, 10%);
+  max-height: 75px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -56,6 +57,10 @@ header {
   nav {
     display: flex;
     align-items: center;
+  }
+
+  img {
+    padding-right: 30px;
   }
 
   a {

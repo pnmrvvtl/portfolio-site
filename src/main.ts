@@ -1,5 +1,6 @@
 import 'normalize.css'
-import './assets/base.scss';
+import './assets/base.scss'
+import '@/assets/_scroll.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
