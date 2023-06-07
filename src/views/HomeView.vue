@@ -19,25 +19,25 @@ const isDark = computed(() => useThemeStore().isDarkTheme)
         <div class="contacts">
           <h5>Contact me:</h5>
           <a href="mailto: pnmrv.vtl@gmail.com">
-            <img src="email.png" alt="email google icon" width="20" />pnmrv.vtl@gmail.com
+            <img src="@/assets/email.png" alt="email google icon" width="20" />pnmrv.vtl@gmail.com
           </a>
           <a href="tel:+380985003090">
-            <img src="phone.png" alt="phone icon" width="20" />+380985003090
+            <img src="@/assets/phone.png" alt="phone icon" width="20" />+380985003090
           </a>
           <a href="https://github.com/pnmrvvtl" target="_blank">
-            <img src="github.png" alt="github icon" width="20" />GitHub
+            <img src="@/assets/github.png" alt="github icon" width="20" />GitHub
           </a>
           <a href="https://www.linkedin.com/in/vitalii-ponomarov-289039237/" target="_blank">
-            <img src="linkedin.png" alt="linkedin icon" width="20" />LinkedIn
+            <img src="@/assets/linkedin.png" alt="linkedin icon" width="20" />LinkedIn
           </a>
           <a href="https://djinni.co/q/8df21bb864/" target="_blank">
-            <img src="djinni.png" alt="djinni icon" width="20" />Djinni
+            <img src="@/assets/djinni.png" alt="djinni icon" width="20" />Djinni
           </a>
           <a
             href="https://docs.google.com/document/d/1aRBaewVLefO7Rw3zJDLa68VndX9dzoDPgEL8kkV1jqs"
             target="_blank"
           >
-            <img src="cv.png" alt="cv icon" width="20" />CV
+            <img src="@/assets/cv.png" alt="cv icon" width="20" />CV
           </a>
         </div>
       </div>
