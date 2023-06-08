@@ -21,7 +21,7 @@
     "classes": [],
     "document": "https://app.rs.school/certificate/2rk8bppe",
     "graduationProject": {
-      "title": "Course project RS-Healthy App",
+      "title": "RS-Healthy App",
       "link": "https://github.com/pnmrvvtl/rs-clone",
       "description": "project working with Fitness API and Spoonacular API (meals), Google Maps API. After user input some values about himself our app can propose personal data for this user about health and propose meal plan for user and closest sport areas.",
       "usedStack": ["Typescript", "React.js", "React-router", "React-google-maps", "Firebase", "Axios", "Material-UI", "Webpack", "Sass", "Chart.js"]

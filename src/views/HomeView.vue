@@ -1,4 +1,5 @@
 <script setup lang="ts">
+//todo why width of progress line are different?
 import { useThemeStore } from '@/stores/theme'
 import { computed } from 'vue'
 import introduction from '@/assets/json/introduction.json'
@@ -8,7 +9,7 @@ import type EducationItem from '@/types/educationItem'
 import type ExperienceItem from '@/types/experienceItem'
 
 const isDark = computed(() => useThemeStore().isDarkTheme)
-const educationData = (educationJson as EducationItem[]).reverse()
+const educationData = educationJson as EducationItem[]
 const experienceData = experienceJson as ExperienceItem[]
 const openGoogleSearch = (stackItem: string) => {
   const searchQuery = `https://www.google.com/search?q=${encodeURIComponent(stackItem)}`
@@ -63,7 +64,8 @@ const openGoogleSearch = (stackItem: string) => {
           <h2>{{ education.schoolName }}</h2>
           <p>{{ education.specialtyName }}</p>
           <p>{{ education.startDate }} - {{ education.finishDate }}</p>
-          <ul>
+          <h3 v-if="education.classes.length">Classes:</h3>
+          <ul v-if="education.classes.length">
             <li
               v-for="className in education.classes"
               :key="className"
@@ -73,12 +75,18 @@ const openGoogleSearch = (stackItem: string) => {
             </li>
           </ul>
           <div v-if="education.document">
-            <a :href="education.document" target="_blank">View Document</a>
+            <a :href="education.document" target="_blank">View Certificate</a>
           </div>
           <div>
-            <h3>{{ education.graduationProject.title }}</h3>
+            <h3>Graduation project: {{ education.graduationProject.title }}</h3>
             <p>{{ education.graduationProject.description }}</p>
-            <a :href="education.graduationProject.link" target="_blank">View Project</a>
+            <a
+              v-if="education.graduationProject.link"
+              :href="education.graduationProject.link"
+              target="_blank"
+              >Project's Github repository</a
+            >
+            <p>Used stack:</p>
             <ul>
               <li
                 v-for="stackItem in education.graduationProject.usedStack"
@@ -214,6 +222,7 @@ main {
   .education,
   .experience {
     display: flex;
+    line-height: 3rem;
 
     &__progress {
       margin: 0 10px;
@@ -225,6 +234,24 @@ main {
       padding: 20px;
       .education__element {
         position: relative;
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        a {
+          color: lighten($DARK_BG_COLOR, 20%);
+          display: inline-block;
+          padding-bottom: 10px;
+
+          &:hover {
+            color: lighten($DARK_BG_COLOR, 40%);
+          }
+        }
+
+        &:not(:first-of-type) {
+          margin-top: 30px;
+        }
         ul {
           padding: 0;
           display: flex;
