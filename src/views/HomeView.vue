@@ -10,15 +10,19 @@ import type ExperienceItem from '@/types/experienceItem'
 const isDark = computed(() => useThemeStore().isDarkTheme)
 const educationData = (educationJson as EducationItem[]).reverse()
 const experienceData = experienceJson as ExperienceItem[]
+const openGoogleSearch = (stackItem: string) => {
+  const searchQuery = `https://www.google.com/search?q=${encodeURIComponent(stackItem)}`
+  window.open(searchQuery, '_blank')
+}
 </script>
 
 <template>
   <main :class="{ dark: isDark }">
-    <section class="general-info">
+    <section class="general-info" id="contacts">
       <div class="general-info__photo"></div>
       <div class="general-info__credentials">
         <h2>Vitalii Ponomarov</h2>
-        <h4>Frontend Developer</h4>
+        <h4>Frontend Developer (React, Vue)</h4>
         <p>{{ introduction.introduction }}</p>
         <div class="contacts">
           <h5>Contact me:</h5>
@@ -46,7 +50,7 @@ const experienceData = experienceJson as ExperienceItem[]
         </div>
       </div>
     </section>
-    <h2>Education</h2>
+    <h2 id="education">Education</h2>
     <section class="education">
       <div class="education__progress"></div>
       <div class="education__data">
@@ -60,7 +64,13 @@ const experienceData = experienceJson as ExperienceItem[]
           <p>{{ education.specialtyName }}</p>
           <p>{{ education.startDate }} - {{ education.finishDate }}</p>
           <ul>
-            <li v-for="className in education.classes" :key="className">{{ className }}</li>
+            <li
+              v-for="className in education.classes"
+              :key="className"
+              @click="openGoogleSearch(className)"
+            >
+              {{ className }}
+            </li>
           </ul>
           <div v-if="education.document">
             <a :href="education.document" target="_blank">View Document</a>
@@ -70,7 +80,11 @@ const experienceData = experienceJson as ExperienceItem[]
             <p>{{ education.graduationProject.description }}</p>
             <a :href="education.graduationProject.link" target="_blank">View Project</a>
             <ul>
-              <li v-for="stackItem in education.graduationProject.usedStack" :key="stackItem">
+              <li
+                v-for="stackItem in education.graduationProject.usedStack"
+                :key="stackItem"
+                @click="openGoogleSearch(stackItem)"
+              >
                 {{ stackItem }}
               </li>
             </ul>
@@ -78,7 +92,7 @@ const experienceData = experienceJson as ExperienceItem[]
         </div>
       </div>
     </section>
-    <h2>Working experience</h2>
+    <h2 id="experience">Working experience</h2>
     <section class="experience">
       <div class="experience__progress"></div>
       <div class="experience__data">
@@ -101,6 +115,10 @@ const experienceData = experienceJson as ExperienceItem[]
 
 <style scoped lang="scss">
 @import '@/assets/_colors';
+
+html {
+  scroll-behavior: smooth;
+}
 
 main {
   &.dark {
@@ -134,8 +152,8 @@ main {
     &__photo {
       margin-top: 20px;
       align-self: flex-start;
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       border: 3px solid $LIGHT_BG_COLOR;
       border-radius: 50%;
       background-image: url('@/assets/portrait.jpg');
@@ -188,6 +206,11 @@ main {
     }
   }
 
+  > h2 {
+    padding: 30px 0;
+    font-size: 3.5rem;
+  }
+
   .education,
   .experience {
     display: flex;
@@ -216,6 +239,12 @@ main {
             color: $LIGHT_FONT_COLOR;
             padding: 10px;
             border-radius: 15px;
+            box-shadow: 0px 0px 10px 0px $DARK_BG_COLOR;
+            cursor: pointer;
+
+            &:hover {
+              color: darken($LIGHT_FONT_COLOR, 20%);
+            }
           }
         }
 

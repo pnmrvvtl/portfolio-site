@@ -24,7 +24,7 @@
       "title": "Course project RS-Healthy App",
       "link": "https://github.com/pnmrvvtl/rs-clone",
       "description": "project working with Fitness API and Spoonacular API (meals), Google Maps API. After user input some values about himself our app can propose personal data for this user about health and propose meal plan for user and closest sport areas.",
-      "usedStack": ["Typescript", "React", "React-router", "React-google-maps", "Firebase", "Axios", "Material-UI", "Webpack", "Sass", "Chart.js"]
+      "usedStack": ["Typescript", "React.js", "React-router", "React-google-maps", "Firebase", "Axios", "Material-UI", "Webpack", "Sass", "Chart.js"]
     }
   },
   {
@@ -38,7 +38,7 @@
       "title": "Browser of GraphQL queries, clone of GraphiQL",
       "link": "https://github.com/pnmrvvtl/graphiql-app",
       "description": "an interactive in-browser GraphQL IDE",
-      "usedStack": ["Typescript", "React", "Next", "Tailwind", "Firebase", "Radix-ui", "Codemirror",
+      "usedStack": ["Typescript", "React.js", "Next.js", "Tailwind", "Firebase", "Radix-ui", "Codemirror",
         "Redux Toolkit", "RTK Query", "i18next"]
     }
   }
