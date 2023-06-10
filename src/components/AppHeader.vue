@@ -4,6 +4,7 @@ import { useThemeStore } from '@/stores/theme'
 //todo rewrite with Composition API
 //todo extract components and refactor
 //todo change logo color on theme changing
+//todo dark in one place
 export default {
   name: 'AppHeader',
   components: { AppThemeIcon },
@@ -35,13 +36,19 @@ export default {
   <header :class="{ dark: isDark }">
     <div class="upper-menu">
       <RouterLink to="/">
-        <img alt="site logo" src="@/assets/logo.png" width="80" />
+        <img
+          alt="site logo"
+          class="site-logo"
+          :class="{ dark: isDark }"
+          src="@/assets/logo.png"
+          width="80"
+        />
       </RouterLink>
       <label for="check" class="burger">
         <input type="checkbox" id="check" v-model="isMenuOpened" />
-        <span></span>
-        <span></span>
-        <span></span>
+        <span :class="{ dark: isDark }"></span>
+        <span :class="{ dark: isDark }"></span>
+        <span :class="{ dark: isDark }"></span>
       </label>
     </div>
     <div class="menu" :class="{ opened: isMenuOpened }">
@@ -77,6 +84,12 @@ header {
   .upper-menu {
     display: flex;
     justify-content: space-between;
+
+    .site-logo {
+      &.dark {
+        filter: invert(1);
+      }
+    }
   }
 
   .menu {
@@ -147,16 +160,21 @@ header {
   }
   label {
     display: none;
+    transform: scale(70%);
     flex-direction: column;
     width: 70px;
     cursor: pointer;
 
     span {
-      background: #fff;
+      background: $DARK_FONT_COLOR;
       border-radius: 10px;
       height: 7px;
       margin: 7px 0;
       transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+      &.dark {
+        background: $LIGHT_FONT_COLOR;
+      }
     }
 
     span:nth-of-type(1) {
