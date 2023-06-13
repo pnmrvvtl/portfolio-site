@@ -33,6 +33,9 @@ const openGoogleSearch = (stackItem: string) => {
           <a href="tel:+380985003090">
             <img src="@/assets/phone.png" alt="phone icon" width="20" />+380985003090
           </a>
+          <a href="https://t.me/pnmrvvtl" target="_blank">
+            <img src="@/assets/telegram.png" alt="telegram icon" width="20" />Telegram
+          </a>
           <a href="https://github.com/pnmrvvtl" target="_blank">
             <img src="@/assets/github.png" alt="github icon" width="20" />GitHub
           </a>
@@ -63,7 +66,7 @@ const openGoogleSearch = (stackItem: string) => {
           <div class="education__marker"></div>
           <h2>{{ education.schoolName }}</h2>
           <p>{{ education.specialtyName }}</p>
-          <p>{{ education.startDate }} - {{ education.finishDate }}</p>
+          <p class="date">{{ education.startDate }} - {{ education.finishDate }}</p>
           <h3 v-if="education.classes.length">Classes:</h3>
           <ul v-if="education.classes.length">
             <li
@@ -114,7 +117,7 @@ const openGoogleSearch = (stackItem: string) => {
           <p>{{ experience.description }}</p>
           <p>{{ experience.position }}</p>
           <p>{{ experience.location }}</p>
-          <p>{{ experience.startDate }} - {{ experience.finishDate }}</p>
+          <p class="date">{{ experience.startDate }} - {{ experience.finishDate }}</p>
         </div>
       </div>
     </section>
@@ -131,9 +134,13 @@ html {
 main {
   &.dark {
     * {
-      color: $LIGHT_FONT_COLOR;
+      color: darken($LIGHT_FONT_COLOR, 20%);
     }
     background-color: darken($DARK_BG_COLOR, 10%);
+
+    .date {
+      color: darken($LIGHT_FONT_COLOR, 40%);
+    }
   }
 
   padding: 50px;
@@ -148,6 +155,10 @@ main {
     text-decoration: none;
     color: $DARK_FONT_COLOR;
     transition: all 0.3s ease;
+  }
+
+  .date {
+    color: lighten($DARK_FONT_COLOR, 40%);
   }
 
   .general-info {
