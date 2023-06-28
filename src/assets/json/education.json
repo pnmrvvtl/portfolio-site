@@ -1,16 +1,17 @@
 [
   {
-    "schoolName": "National Aerospace University «Kharkiv Aviation Institute»",
-    "specialtyName": "honors master's degree in the field of study «Information Technologies of Design», qualification «Computer System Analyst»",
-    "startDate": "SEPTEMBER 2010",
-    "finishDate": "FEBRUARY 2016",
-    "classes": ["OOP in C++", "Algorithms", "Data Structures", "Discrete Mathematics", "Computer Design with CAD/CAM/CAE systems"],
-    "document": "",
+    "schoolName": "The Rolling Scopes School",
+    "specialtyName": "course «React Developer»",
+    "startDate": "MARCH 2023",
+    "finishDate": "JUNE 2023",
+    "classes": [],
+    "document": "https://app.rs.school/certificate/sh7x3hcp",
     "graduationProject": {
-      "title": "Research and development of a simulation model of an unmanned aircraft flight on a given route, taking into account the relief",
-      "description": "",
-      "link": "",
-      "usedStack": ["C++","Qt Framework"]
+      "title": "Browser of GraphQL queries, clone of GraphiQL",
+      "link": "https://github.com/pnmrvvtl/graphiql-app",
+      "description": "an interactive in-browser GraphQL IDE",
+      "usedStack": ["Typescript", "React.js", "Next.js", "Tailwind", "Firebase", "Radix-ui", "Codemirror",
+        "Redux Toolkit", "RTK Query", "i18next"]
     }
   },
   {
@@ -28,18 +29,17 @@
     }
   },
   {
-    "schoolName": "The Rolling Scopes School",
-    "specialtyName": "course «React Developer»",
-    "startDate": "MARCH 2023",
-    "finishDate": "JUNE 2023",
-    "classes": [],
-    "document": "https://app.rs.school/certificate/sh7x3hcp",
+    "schoolName": "National Aerospace University «Kharkiv Aviation Institute»",
+    "specialtyName": "honors master's degree in the field of study «Information Technologies of Design», qualification «Computer System Analyst»",
+    "startDate": "SEPTEMBER 2010",
+    "finishDate": "FEBRUARY 2016",
+    "classes": ["OOP in C++", "Algorithms", "Data Structures", "Discrete Mathematics", "Computer Design with CAD/CAM/CAE systems"],
+    "document": "",
     "graduationProject": {
-      "title": "Browser of GraphQL queries, clone of GraphiQL",
-      "link": "https://github.com/pnmrvvtl/graphiql-app",
-      "description": "an interactive in-browser GraphQL IDE",
-      "usedStack": ["Typescript", "React.js", "Next.js", "Tailwind", "Firebase", "Radix-ui", "Codemirror",
-        "Redux Toolkit", "RTK Query", "i18next"]
+      "title": "Research and development of a simulation model of an unmanned aircraft flight on a given route, taking into account the relief",
+      "description": "",
+      "link": "",
+      "usedStack": ["C++","Qt Framework"]
     }
   }
 ]
