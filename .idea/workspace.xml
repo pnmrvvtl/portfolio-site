@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="53be0025-21d5-4811-8dfa-2b40fb4e2b86" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/example.cy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/e2e.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fav_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fav_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/_scroll.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/cv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/djinni.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fav_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fav_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/json/education.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/json/experience.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/json/introduction.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/portrait.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/telegram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppFooter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppThemeIcon.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/__tests__/HelloWorld.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/theme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/educationItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/experienceItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AboutView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ContactView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HomeView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.vitest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitest.config.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2ZwjEoXpeYziSjU1seeSHEJjd09" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53be0025-21d5-4811-8dfa-2b40fb4e2b86" name="Changes" comment="" />
+      <created>1703339927241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703339927241</updated>
+      <workItem from="1703339928339" duration="622000" />
+      <workItem from="1703341350098" duration="34000" />
+      <workItem from="1708876906461" duration="538000" />
+      <workItem from="1708877457129" duration="77000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
